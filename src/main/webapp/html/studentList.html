@@ -305,6 +305,9 @@
             }
         })
     }
+    function exportExcel() {
+        location.href='http://localhost:8080/export/exportExcel';
+    }
 </script>
 <body>
 
@@ -324,6 +327,7 @@
 
             <div class="panel-heading">
                 <button class="btn btn-info" onclick="showAddStudent()">添加学生</button>
+                <button class="btn btn-info" onclick="exportExcel()">导出Excel</button>
 
             </div>
         </div>
