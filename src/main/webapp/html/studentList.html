@@ -12,7 +12,6 @@
 <!-- 引入validate -->
 <link href="/js/bootstrapvalidator-v0.5.2-0/dist/css/bootstrapValidator.min.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="/js/bootstrapvalidator-v0.5.2-0/dist/js/bootstrapValidator.min.js"></script>
-
 <!--引入 日期插件  -->
 <link href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
@@ -308,6 +307,9 @@
     function exportExcel() {
         location.href='http://localhost:8080/export/exportExcel';
     }
+    function downExcel() {
+        location.href='http://localhost:8080/export/downExcel';
+    }
 </script>
 <body>
 
@@ -328,6 +330,7 @@
             <div class="panel-heading">
                 <button class="btn btn-info" onclick="showAddStudent()">添加学生</button>
                 <button class="btn btn-info" onclick="exportExcel()">导出Excel</button>
+                <button class="btn btn-success" onclick="downExcel()">导出Excels</button>
 
             </div>
         </div>
